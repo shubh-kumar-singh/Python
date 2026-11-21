@@ -89,7 +89,6 @@ def checkout():
     for product, quantity in cart.items():
         price = products[product]
         total = price * quantity
-        subtotal+=total
 
         print(f"{product} x{quantity} = Rs.{total}")
 
