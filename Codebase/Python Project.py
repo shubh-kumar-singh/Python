@@ -105,31 +105,33 @@ def checkout():
     cart.clear()
 
 
-
-while True:
-    print("\n========== SHOPPING CART SYSTEM ==========")
-    print("1. View Products")
-    print("2. Add to Cart")
-    print("3. Remove from Cart")
-    print("4. View Cart")
-    print("5. Checkout")
-    print("6. Exit")
-    print("==========================================")
+def main():
+    while True:
+        print("\n========== SHOPPING CART SYSTEM ==========")
+        print("1. View Products")
+        print("2. Add to Cart")
+        print("3. Remove from Cart")
+        print("4. View Cart")
+        print("5. Checkout")
+        print("6. Exit")
+        print("==========================================")
+        
+        choice = input("Enter your choice (1-6): ").strip()
     
-    choice = input("Enter your choice (1-6): ").strip()
-
-    if choice == "1":
-        view_all_product()
-    elif choice == "2":
-        add()
-    elif choice == "3":
-        remove()
-    elif choice == "4":
-        view_cart()
-    elif choice == "5":
-        checkout()
-    elif choice == "6":
-        print("Thank you for using Shopping Cart System!")
-        break
-    else:
-        print("Invalid choice. Please select between 1 and 6.")    
+        if choice == "1":
+            view_all_product()
+        elif choice == "2":
+            add()
+        elif choice == "3":
+            remove()
+        elif choice == "4":
+            view_cart()
+        elif choice == "5":
+            checkout()
+        elif choice == "6":
+            print("Thank you for using Shopping Cart System!")
+            break
+        else:
+            print("Invalid choice. Please select between 1 and 6.")    
+            
+main()
